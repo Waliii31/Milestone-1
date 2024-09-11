@@ -1,24 +1,125 @@
+/* General Styles */
 body {
   font-family: "Poppins", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hidden {
-  display: none;
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
 }
 
-button {
-  transition: background-color 0.3s ease;
+.text-center {
+  text-align: center;
 }
 
-button:hover {
-  background-color: #0056b3;
+.mb-4 {
+  margin-bottom: 1.5rem;
+}
+
+.mb-5 {
+  margin-bottom: 3rem;
+}
+
+/* Hero Section */
+.heroSection {
+  width: 99.8%;
+  min-height: 92vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-picture {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  margin-bottom: 0rem;
+}
+
+.display-4 {
+  font-size: 2.5rem;
+  font-weight: 600;
+}
+
+.lead {
+  font-size: 1.25rem;
+}
+
+/* Cards */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
 }
 
 .card {
+  background-color: #f8f9fa;
   border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  flex: 1;
 }
 
 .card-title {
   font-size: 1.5rem;
   color: #007bff;
+  margin-bottom: 1rem;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Skills Section */
+.hidden {
+  display: none;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column;
+  }
+
+  .profile-picture {
+    width: 100px;
+    height: 100px;
+  }
+
+  .display-4 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .card {
+    padding: 15px;
+  }
+
+  .card-title {
+    font-size: 1.25rem;
+  }
+
+  .btn {
+    padding: 8px 16px;
+  }
 }
